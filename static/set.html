@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta name="description" content="Thai Chess Online หมากรุก ออนไลน์">
+    <meta name="keywords" content="Thai,Chess,Online,หมากรุก,ออนไลน์">
+    <meta name="author" content="Nat">
+    <link rel="stylesheet" href="css/chessboard-0.3.0.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/thchess.js"></script>
+    <script src="/js/chessboard.js"></script>
+    <!-- BOOTSTRAP begin-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jumbotron-narrow.css" />
+    <!-- end -->
+  </head>
+  <body>
+    <div class="container">      
+        <p><a class="btn btn-lg btn-primary" id="startBtn" value="Start" >ตำแหน่งเริ่มต้น</a><a>&nbsp;&nbsp;</a><a class="btn btn-lg btn-primary" href="index.html" role="button" onclick="LoginGuest();">กลับหน้าหลัก </a></p>  </p>
+
+        
+        <script src="js/thchess.js"></script>
+        <div id="board" style="width: 300px"></div><br>
+        
+        <p><a class="btn btn-lg btn-primary" id="flipOrientationBtn" value="Flip Orientation" >หมุนกระดาน</a><a>&nbsp;&nbsp;</a><a class="btn btn-lg btn-primary" href="set.html" role="button" onclick="LoginGuest();">ล้างกระดาน </a></p>
+        
+        
+      </div>
+      <script>
+        var board = ChessBoard('board', {
+  draggable: true,
+  dropOffBoard: 'trash',
+  sparePieces: true
+});
+$('#startBtn').on('click', board.start);
+$('#clearBtn').on('click', board.clear);
+
+        
+        $('#flipOrientationBtn').on('click', board.flip);
+        $('#startBtn').on('click', board.start);
+        $('#clearBtn').on('click', board.clear);
+      </script>
+   
+
+    </div> <!-- /container -->    
+  </body>
+</html>

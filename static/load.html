@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta name="description" content="Thai Chess Online หมากรุก ออนไลน์">
+    <meta name="keywords" content="Thai,Chess,Online,หมากรุก,ออนไลน์">
+    <meta name="author" content="Nat">
+    <link rel="stylesheet" href="css/chessboard-0.3.0.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/thchess.js"></script>
+    <script src="/js/chessboard.js"></script>
+    <!-- BOOTSTRAP begin-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jumbotron-narrow.css" />
+    <!-- end -->
+  </head>
+  <body>
+    <div class="container">      
+        <p><a class="btn btn-lg btn-primary" id="flipOrientationBtn" value="Flip Orientation" >หมุนกระดาน</a><a>&nbsp;&nbsp;</a><a class="btn btn-lg btn-primary" href="index.html" role="button" onclick="LoginGuest();">กลับหน้าหลัก </a></p>  
+        
+        <script src="js/thchess.js"></script>
+        <div id="board" style="width: 300px"></div>
+        
+        <br><p><a class="btn btn-lg btn-primary" id="game1" value="game1" >ชาย VS แดง </a><a>&nbsp;&nbsp;</a><a class="btn btn-lg btn-primary" id="game2" value="game2" >เขียว VS ดำ </a></p>
+        <br><p><a class="btn btn-lg btn-primary" id="game3" value="game3" >ดำ VS เขียว </a><a>&nbsp;&nbsp;</a><a class="btn btn-lg btn-primary" id="game4" value="game4" >แดง VS เขียว </a></p>  
+        
+                 
+        
+        
+      </div>
+      <script>
+        var onSnapbackEnd = function(piece, square, position, orientation) {
+  console.log("Piece: " + piece);
+  console.log("Square: " + square);
+  console.log("Position: " + ChessBoard.objToFen(position));
+  console.log("Orientation: " + orientation);
+  console.log("--------------------");
+};
+
+var cfg = {
+  draggable: true,
+  position: 'start',
+  onSnapbackEnd: onSnapbackEnd
+};
+var board = ChessBoard('board', cfg);
+        $('#flipOrientationBtn').on('click', board.flip);
+        $('#game1').on('click', function() {  board.position('r6r/2b1nk2/ppnqppbp/2pp2p1/BP2PP2/P1PPQNPP/3NKB2/R6R w - - 0 1');});
+        $('#game2').on('click', function() {  board.position('r6r/2bnqk2/p1ppbnpp/1p2pp2/3PP3/PPPBQPPP/2KNNB2/R6R w - - 0 1');});
+        $('#game3').on('click', function() {  board.position('r6r/2bknb2/ppnqpppp/2pp4/2PP4/PPNBPPPP/2KQNB2/R6R w - - 0 1');});
+        $('#game4').on('click', function() {  board.position('r6r/2qnnbk1/p1bppppp/1pp5/2PP1PP1/PPNQP2P/2BKNB2/R6R w - - 0 1');});
+      </script>
+   
+
+    </div> <!-- /container -->    
+  </body>
+</html>

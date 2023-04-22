@@ -1,0 +1,25 @@
+{
+  "name": "thchess",
+  "version": "1.0.0",
+  "description": "Thai Chess JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Thai",
+    "Chess",
+    "Makruk",
+    "JS",
+    "Javascript"
+  ],
+  "author": "Nat",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
+  },
+  "engines": {
+    "node": "5.6.0"
+  }
+}

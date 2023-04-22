@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta name="description" content="Thai Chess Online หมากรุกไทย ออนไลน์">
+    <meta name="keywords" content="Thai,Chess,Online,หมากรุกไทย,ออนไลน์">
+    <meta name="author" content="Nat">
+    <link rel="stylesheet" href="css/chessboard-0.3.0.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/thchess.js"></script>
+    <script src="/js/chessboard.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="/js/game.js"></script>
+    <!-- BOOTSTRAP begin-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jumbotron-narrow.css" />
+    <!-- end -->
+  </head>
+  <body>
+    <div class="container">      
+      <div class="page login" id='page-login'>
+        <div class="jumbotron">
+            <img src = "img/logo.png">
+          <h1>Makrukthai</h1><br>
+          <!--p class="lead">text text text...</p-->
+          <p><a class="btn btn-lg btn-primary" href="new.html" role="button" onclick="LoginGuest();"> เริ่มเกม </a></p>
+          <p><a class="btn btn-lg btn-primary" href="friend.html" role="button" onclick="LoginGuest();">เล่นกับเพื่อน</a></p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button" onclick="LoginGuest();">เล่นออนไลน์</a></p>
+          <p><a class="btn btn-lg btn-primary" href="set.html" role="button" onclick="LoginGuest();">ตั้งตัวหมาก</a></p>
+          <p><a class="btn btn-lg btn-primary" href="load.html#" role="button" onclick="LoginGuest();">เปิดเกมที่บันทึก</a></p>
+        </div>
+      </div>
+
+      <div class="page opening" id='page-opening' hidden>
+        <div class="jumbotron">
+          <h1 id='greeting'></h1>
+          <p><br>
+            <a class="btn btn-lg btn-primary" href="#" role="button" onclick="Play();">เริ่มเกมใหม่</a><br><br>
+            <a class="btn btn-lg btn-primary" href="index.html" role="button" onclick="Play();">กลับหน้าหลัก</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="page game" id='page-game' hidden>
+        <!--button id='game-back'>Back</button-->
+        <a class="btn btn-lg btn-primary" href="#" role="button" onclick="Resign();">
+          <span href="#" role="button" aria-hidden="true">ยอมแพ้</a></span>
+        </a><br><br>
+        <p>คู่ต่อสู้ : <span id="opponentId"></span></p>
+        <div id="board" style="width:300px;"></div><br>        
+        <p>ผู้เล่น : <span id="playerId"></span></p>
+        <p>สถานะ : <span id="status"></span></p>        
+        <p>บันทึกการเดิน : <span id="pgn"></span></p>
+        
+      </div>
+   
+
+    </div> <!-- /container -->    
+  </body>
+</html>
