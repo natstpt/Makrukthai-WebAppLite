@@ -36,20 +36,16 @@ cd Makrukthai-WebAppLite
 3. Install the dependencies:
 
 ```bash
-
+npm install
 ```
 
 4. Start the development server:
 
 ```bash
-npm install
+npm start
 ```
 
 5. Open your browser and navigate to http://localhost:3000 to access the platform.
-
-```bash
-npm start
-```
 
 ## Usage
 1. Register for an account or log in with your existing credentials.
