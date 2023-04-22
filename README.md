@@ -5,10 +5,13 @@ Makrukthai-WebAppLite is a lightweight, user-friendly online chess platform inte
 ## Features
 
 - Responsive design for a seamless experience on various devices (desktop and mobile)
-- Real-time game updates and notifications
-- Board editor
-- Game history
-- Option to play against an AI opponent
+- Play against an AI opponent (เริ่มเกม)
+- Play against an Friends on the same device (เล่นกับเพื่อน)
+- Play against an Friends online (เล่นออนไลน์)
+- Board editor (ตั้งตัวหมาก)
+- Game history (เปิดเกมที่บันทึก)
+- Real-time game updates and notifications 
+
 
 ## Getting Started
 
@@ -48,10 +51,9 @@ npm start
 5. Open your browser and navigate to http://localhost:3000 to access the platform.
 
 ## Usage
-1. Register for an account or log in with your existing credentials.
-2. Choose a game mode: Player vs. Player or Player vs. AI.
-3. If playing against another player, wait for a match or invite a friend.
-4. Enjoy the game!
+1. Choose a game mode: Play against an AI opponent (เริ่มเกม) or Play against an Friends online (เล่นออนไลน์)
+2. If playing against friends online, Wait for a match with friends joining at the same time.
+3. Enjoy the game!
 
 ## License
 Makrukthai-WebAppLite is released under the MIT License.
@@ -59,5 +61,5 @@ Makrukthai-WebAppLite is released under the MIT License.
 ## Acknowledgments
 1. Chessboard.js for the chessboard UI
 2. Chess.js for the chess engine
-3. Thchess.js for modify Chess.js rule to Makrukthai by auycro https://github.com/auycro/thchess_server
+3. Thchess.js for the makrukthai engine rule modify from Chess.js by auycro https://github.com/auycro/thchess_server
 4. Socket.IO for real-time communication
