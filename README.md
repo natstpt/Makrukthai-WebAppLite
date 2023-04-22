@@ -1,15 +1,15 @@
 # Makrukthai-WebAppLite
-![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots1.png)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots2.png)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots3.png)
+![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots1.png)
 
 Makrukthai-WebAppLite is a lightweight, user-friendly online chess platform interface built with HTML, CSS, and JavaScript, featuring a back-end by Node.js. This platform aims to provide an accessible and enjoyable gaming experience for Makrukthai (Thai Chess) enthusiasts.
 
 ## Features
 
 - Responsive design for a seamless experience on various devices (desktop and mobile)
-- Play against an AI opponent (เริ่มเกม)
+- Play against an AI opponent (เริ่มเกม)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots2.png)
 - Play against an Friends on the same device (เล่นกับเพื่อน)
-- Play against an Friends online (เล่นออนไลน์)
-- Board editor (ตั้งตัวหมาก)
+- Play against an Friends online (เล่นออนไลน์)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots3.png)
+- Board editor (ตั้งตัวหมาก)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots4.png)
 - Game history (เปิดเกมที่บันทึก)
 - Real-time game updates and notifications 
 
