@@ -6,7 +6,9 @@ Makrukthai-WebAppLite is a lightweight, user-friendly online chess platform inte
 ## Features
 
 - Responsive design for a seamless experience on various devices (desktop and mobile)
-- Play against an AI opponent (เริ่มเกม)![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots2.png)
+- Play against an AI opponent (เริ่มเกม)
+![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots2.png)
+
 - Play against an Friends on the same device (เล่นกับเพื่อน)
 - Play against an Friends online (เล่นออนไลน์)
 ![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots3.png)
