@@ -63,5 +63,5 @@ Makrukthai-WebAppLite is released under the MIT License.
 ## Acknowledgments
 1. Chessboard.js for the chessboard UI
 2. Chess.js for the chess engine
-3. Thchess.js for the makrukthai engine rule modify from Chess.js by [auycro]https://github.com/auycro/thchess_server
+3. Thchess.js for the makrukthai engine rule modify from Chess.js by [auycro](https://github.com/auycro/thchess_server)
 4. Socket.IO for real-time communication
