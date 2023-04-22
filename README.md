@@ -1,6 +1,6 @@
 # Makrukthai-WebAppLite
-
-Makrukthai-WebAppLite is a lightweight, user-friendly online chess platform interface built with HTML, CSS, and JavaScript, featuring a back-end powered by Node.js. This platform aims to provide an accessible and enjoyable gaming experience for Makrukthai (Thai Chess) enthusiasts.
+![Makrukthai-WebAppLite](https://raw.githubusercontent.com/natstpt/Makrukthai-WebAppLite/main/screenshots/screenshots1.png)
+Makrukthai-WebAppLite is a lightweight, user-friendly online chess platform interface built with HTML, CSS, and JavaScript, featuring a back-end by Node.js. This platform aims to provide an accessible and enjoyable gaming experience for Makrukthai (Thai Chess) enthusiasts.
 
 ## Features
 
